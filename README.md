@@ -1,5 +1,3 @@
-### MEDI-SYNC-via-Tonk
-Absolutely! Here's a **README-style** description for your project:
 
 ---
 
@@ -46,4 +44,3 @@ By combining **real-time communication** with **AI-driven diagnostics**, this su
 
 ---
 
-Let me know if you'd like to include installation steps, a tech stack section, or contributions guide too!
