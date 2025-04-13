@@ -48,7 +48,7 @@ This suite digitizes and automates the diagnostic and communication process acro
 - **NLP-driven report analysis** for highlighting critical patient data from lab reports.
 
 ---
-##Aim:
+##  Aim:
 To revolutionize medical communication and diagnostics by integrating AI-powered report analysis and U-Net-based image segmentation within a unified platform, enabling faster, more accurate, and collaborative healthcare decisions.
 ## 🧪 Methodology
 ---
