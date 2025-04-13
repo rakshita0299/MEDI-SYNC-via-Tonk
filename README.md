@@ -5,7 +5,7 @@
 
 ## 📌 Overview
 
-This project consists of **three mini-applications** built using the **Tonk** platform, designed to enhance communication and collaboration in the **medical field**. The apps streamline interactions between **doctors, patients, and medical laboratories**, while integrating **AI-powered features** for medical image analysis and automated report generation.
+This project consists of **three mini-applications** built using the **Tonk** platform, designed to enhance communication and collaboration in the **medical field**. The apps streamline interactions between **doctors, patients, and medical laboratory**, while integrating **AI-powered features** for medical image analysis and automated report generation.
 
 ## 🧠 Features
 
