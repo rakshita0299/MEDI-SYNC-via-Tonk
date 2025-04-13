@@ -62,7 +62,7 @@ To revolutionize medical communication and diagnostics by integrating AI-powered
 - Doctors and patients exchange reports and scans.
 - AI pipeline is triggered upon upload:
   - **U-Net model** performs segmentation on medical images (e.g., MRI, dermoscopic images).
-  - **Transformer-based NLP model** analyzes medical reports to summarize findings.
+  - **NLP model** analyzes medical reports to summarize findings.
 
 #### 🔬 **LabLink App**
 - Labs upload test results and imaging scans.
