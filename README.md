@@ -81,8 +81,4 @@ To revolutionize medical communication and diagnostics by integrating AI-powered
   - Analyze unstructured text from lab reports.
   - Highlight anomalies and key metrics.
 
-### 4. **Security & Compliance**
-- Data exchange is encrypted.
-- Compliant with healthcare data privacy standards (e.g., HIPAA/GDPR as applicable).
-
 ---
