@@ -1,0 +1,71 @@
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Coverage
+coverage/
+
+# React build artifacts
+*.log
+*.cache
+.cache/
+*.tsbuildinfo
+
+# Tonk synced documents
+tonk_data/
+*.automerge
+*.sync*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+.Python
+*.pkl
+
+# Flask
+instance/
+*.db
+*.sqlite
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch model files
+*.pth
+*.pt
+
+# Generated output
+*.out
+*.log
+
+# Misc
+*.bak
+*.swp
+.idea/
+*.iml
