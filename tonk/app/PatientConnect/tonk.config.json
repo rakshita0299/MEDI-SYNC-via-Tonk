@@ -1,0 +1,8 @@
+{
+  "name": "PatientConnect",
+  "plan": {
+    "projectName": "PatientConnect",
+    "description": "PatientConnect"
+  },
+  "template": "react"
+}

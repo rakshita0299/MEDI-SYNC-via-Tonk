@@ -1,0 +1,8 @@
+{
+  "name": "LabLink",
+  "plan": {
+    "projectName": "LabLink",
+    "description": "LabLink"
+  },
+  "template": "react"
+}

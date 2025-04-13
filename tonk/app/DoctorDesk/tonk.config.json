@@ -1,0 +1,8 @@
+{
+  "name": "DoctorDesk",
+  "plan": {
+    "projectName": "DoctorDesk",
+    "description": "DoctorDesk"
+  },
+  "template": "react"
+}
