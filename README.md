@@ -1,84 +1,91 @@
----
+# 🧠 MediSync: Decentralized Healthcare with Tonk + AI
 
-# 🏥 Medical Communication Suite using Tonk
-
-## 📌 Overview
-
-This project features **three integrated mini-applications** built on the **Tonk** platform, tailored to enhance communication and diagnostics in the **medical field**. It connects **doctors, patients, and diagnostic labs**, powered by **AI-driven capabilities** like **report analysis** using NLP and **image segmentation** using the **U-Net model** for detecting **skin diseases** and **brain tumors**.
-
-## 🧠 Features
-
-### 1. **Doctor-Patient Communication App**
-- Secure chat interface for sharing medical images and reports.
-- AI integration includes:
-  - **NLP-based medical report analysis** for extracting key insights.
-  - **Image segmentation using the U-Net model** for detecting **skin conditions** and **brain tumors**.
-
-### 2. **LabLink App**
-- Facilitates smooth communication between medical labs and doctors.
-- Labs upload test results directly, triggering AI-powered image and report analysis.
-
-### 3. **Specialist Integration Module** *(optional/expandable)*
-- Enables doctors to request second opinions from specialists.
-- Shares both original and AI-analyzed data for collaborative diagnosis.
-
-## ⚙️ Why Tonk?
-
-Tonk offers an ideal foundation for this project with:
-- **Modular, event-driven architecture**.
-- **Real-time communication** across different user roles (doctor, patient, lab).
-- **Secure handling** of medical data.
-- **Easy integration of AI models**, including U-Net for segmentation and transformer models for NLP.
-
-## 🌍 Impact
-
-With the power of AI and seamless communication, this suite:
-- Accelerates diagnosis and decision-making.
-- Reduces doctor workload with **automated report summaries** and **image segmentation**.
-- Improves accuracy in detecting **skin conditions** and **brain tumors**.
-- Enhances collaboration across the healthcare ecosystem for better patient outcomes.
+A privacy-first, real-time medical collaboration platform built with the **Tonk stack**, featuring **three interoperable mini-apps** — PatientConnect, DoctorDesk, and LabLink — that **share data seamlessly** using a single local-first datastore and integrate **AI-powered medical analysis**.
 
 ---
 
-## 🔍 Detailed Overview
+## 🚀 Overview
 
-This suite digitizes and automates the diagnostic and communication process across stakeholders in healthcare. The core innovation lies in its **AI-powered modules** embedded in an efficient communication workflow. It focuses on:
+MediSync enables patients, doctors, and labs to communicate, collaborate, and analyze medical data in one shared ecosystem — without relying on centralized databases or authentication.
 
-- **Image segmentation using U-Net** for early detection of **skin diseases** and **brain tumors**.
-- **NLP-driven report analysis** for highlighting critical patient data from lab reports.
+Built using [Tonk](https://tonk.dev), this system leverages:
 
----
-##  Aim:
-To revolutionize medical communication and diagnostics by integrating AI-powered report analysis and U-Net-based image segmentation within a unified platform, enabling faster, more accurate, and collaborative healthcare decisions.
-## 🧪 Methodology
----
-### 1. **Architecture and Design**
-- Built using Tonk’s modular micro-app framework.
-- Each app performs specific roles while communicating over secure channels.
-
-### 2. **Mini-App Breakdown**
-
-#### 🗣️ **Doctor-Patient Communication App**
-- Doctors and patients exchange reports and scans.
-- AI pipeline is triggered upon upload:
-  - **U-Net model** performs segmentation on medical images (e.g., MRI, dermoscopic images).
-  - **NLP model** analyzes medical reports to summarize findings.
-
-#### 🔬 **LabLink App**
-- Labs upload test results and imaging scans.
-- Automatically processed via:
-  - **U-Net** for identifying tumors or lesions.
-  - **NLP** for report abstraction.
-
-#### 🧑‍⚕️ **Specialist Review Module**
-- Specialists can review AI-analyzed data and add insights.
-- Facilitates multi-expert opinion with intelligent recommendations.
-
-### 3. **AI Model Integration**
-- **U-Net (Convolutional Neural Network architecture)**:
-  - Applied to segment skin lesions and brain tumors in medical imaging.
-- **Transformer/NLP-based models**:
-  - Analyze unstructured text from lab reports.
-  - Highlight anomalies and key metrics.
+- **Local-first sync (via Automerge)**
+- **Shared state across apps**
+- **AI assistance for vital analysis, tumor detection, and segmentation**
+- **Ephemeral, privacy-friendly architecture**
+- **Beautiful, chat-style UX**
 
 ---
+
+## 🧩 Mini-Apps
+
+### 🧍 PatientConnect
+- Share personal health data and vitals
+- Upload images (e.g., scans) and send to doctor
+- View doctor and lab responses in real-time
+
+### 🩺 DoctorDesk
+- View patient and lab messages
+- Request lab reports or medical images
+- Use AI to analyze vitals, MRI images, and segment anomalies
+
+### 🧪 LabLink
+- Receive image or test requests from doctor
+- Upload medical reports or diagnostic images
+- Communicate directly with doctors
+
+---
+
+## 💡 AI Features
+
+Integrated with Flask-based APIs for instant feedback:
+
+| Feature         | Triggered By Keyword | Output                          |
+|----------------|----------------------|----------------------------------|
+| 🔍 Vitals Analysis | `vital`, `bp`, `sugar` etc. | 5–6 health insights in bullets |
+| 🧠 MRI Detection   | `mri`, `tumor`, `ct scan`   | Benign or malignant result     |
+| 🖼️ Image Segmentation | `segment`, `highlight`, `lesion` | Visual mask of affected area   |
+
+---
+
+## 🔒 Why Tonk?
+
+- **Local-first architecture**: Data stays on the user's device
+- **No server required**: Everything works offline and syncs when online
+- **Shared datastore**: All apps use the same Automerge doc
+- **Instant interoperability**: Real-time sync with no backend logic
+
+---
+
+## ⚙️ Tech Stack
+
+- 🧠 **Tonk** + **Automerge**
+- 💬 **Zustand** for state management
+- 🌐 **React + TypeScript**
+- 🧪 **Flask** APIs for AI inference
+- 🧠 **HuggingFace Transformers** + PyTorch
+- 🖼️ **Custom UNet Model** for image segmentation
+
+---
+
+## 📦 Getting Started
+
+```bash
+# 1. Clone this repo
+git clone https://github.com/yourusername/medisync-tonk.git
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Start the Tonk sync server (in another terminal)
+pnpm tonk serve
+
+# 4. Run each mini-app
+pnpm dev:patient
+pnpm dev:doctor
+pnpm dev:lab
+
+# 5. Start Flask backend for AI
+cd backend
+python app.py
